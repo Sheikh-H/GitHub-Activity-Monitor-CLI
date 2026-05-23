@@ -41,14 +41,12 @@ def all_activity(username):
     data = fetch_request(username)
 
     rprint(
-        f"\tListing all activities for GitHub user: '[bold green]{username.upper()}[/bold green]'..."
+        f"\tListing [bold blue]ALL[/bold blue] activities for GitHub user: '[bold green]{username.upper()}[/bold green]'..."
     )
     time.sleep(2)
     for info in data:
         print("-" * 115)
-        rprint(
-            f"[bold]Event Type[/bold]: [dim]{info['type'].replace("Event", "")}[/dim] \t\t\t\t\t\t\t\t\t [bold]At: [/bold][dim]{info['created_at'].replace('T', " ").replace('Z',"")}[/dim]"
-        )
+
         rprint(f"[bold]Repo Name[/bold]: {info['repo']['name']}")
         payload = info.get("payload", {})
         description = payload.get("description", {})
@@ -110,7 +108,7 @@ def filtered_activity(username, filter):
         )
     data = fetch_request(username)
     rprint(
-        f"\tListing [bold blue]{filter[:-5].upper()}[/bold blue] activities for GitHub user: '[bold green]{username.upper()}[/bold green]'..."
+        f"\tListing [bold blue]{filter.replace("Event", "").upper()}[/bold blue] activities for GitHub user: '[bold green]{username.upper()}[/bold green]'..."
     )
     time.sleep(2)
     for info in data:
