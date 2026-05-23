@@ -1,1047 +1,265 @@
 [
   {
-    "id": "9820735606",
-    "type": "WatchEvent",
+    "id": "12276050704",
+    "type": "PushEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 1234582852,
-      "name": "ExtendDB/extenddb",
-      "url": "https://api.github.com/repos/ExtendDB/extenddb"
+      "id": 1114787856,
+      "name": "Sheikh-H/Sheikh-H",
+      "url": "https://api.github.com/repos/Sheikh-H/Sheikh-H"
     },
     "payload": {
-      "action": "started"
+      "repository_id": 1114787856,
+      "push_id": 34566229888,
+      "ref": "refs/heads/main",
+      "head": "7b35914d149b48ddc9c0d18fdf99dd8bf177a1d2",
+      "before": "9132d499e2a2e6390a6ff74bd3a4c43842c17f33"
     },
     "public": true,
-    "created_at": "2026-05-23T15:14:38Z",
-    "org": {
-      "id": 283372552,
-      "login": "ExtendDB",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/ExtendDB",
-      "avatar_url": "https://avatars.githubusercontent.com/u/283372552?"
-    }
+    "created_at": "2026-05-23T18:03:22Z"
   },
   {
-    "id": "9819123045",
-    "type": "WatchEvent",
+    "id": "12272990389",
+    "type": "CreateEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 812866687,
-      "name": "codse/animata",
-      "url": "https://api.github.com/repos/codse/animata"
+      "id": 1247651317,
+      "name": "Sheikh-H/Sentinel-Task",
+      "url": "https://api.github.com/repos/Sheikh-H/Sentinel-Task"
     },
     "payload": {
-      "action": "started"
+      "ref": "main",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/main",
+      "master_branch": "main",
+      "description": "\ud83d\udee1\ufe0f SentinelTask: A secure, multi-user command-line interface (CLI) task tracking system built with Python standard libraries. Implements cryptographic isolation using salted PBKDF2-HMAC-SHA256 hashes, terminal argument parsing via sys.argv, and user-scoped auto-incrementing task IDs. Developed for the roadmap.sh Task Tracker project challenge.",
+      "pusher_type": "user"
     },
     "public": true,
-    "created_at": "2026-05-23T13:30:53Z",
-    "org": {
-      "id": 26914411,
-      "login": "codse",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/codse",
-      "avatar_url": "https://avatars.githubusercontent.com/u/26914411?"
-    }
+    "created_at": "2026-05-23T15:50:20Z"
   },
   {
-    "id": "9783522880",
-    "type": "WatchEvent",
+    "id": "12079434259",
+    "type": "PushEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 930268646,
-      "name": "1998code/19-Splash-Screen-for-SwiftUI",
-      "url": "https://api.github.com/repos/1998code/19-Splash-Screen-for-SwiftUI"
+      "id": 1242697320,
+      "name": "Sheikh-H/CS50-Final-Project-Ecommerce-Store",
+      "url": "https://api.github.com/repos/Sheikh-H/CS50-Final-Project-Ecommerce-Store"
     },
     "payload": {
-      "action": "started"
+      "repository_id": 1242697320,
+      "push_id": 34369984407,
+      "ref": "refs/heads/main",
+      "head": "dfef808c4222c5052af03f87f28549295af355e8",
+      "before": "f8228a34b978de7538fadb7b5f76cce6ac75ad06"
     },
     "public": true,
-    "created_at": "2026-05-22T10:55:09Z"
+    "created_at": "2026-05-19T17:07:57Z"
   },
   {
-    "id": "9780243947",
-    "type": "WatchEvent",
+    "id": "12073144264",
+    "type": "PushEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 569723337,
-      "name": "yusukebe/pico",
-      "url": "https://api.github.com/repos/yusukebe/pico"
+      "id": 1242697320,
+      "name": "Sheikh-H/CS50-Final-Project-Ecommerce-Store",
+      "url": "https://api.github.com/repos/Sheikh-H/CS50-Final-Project-Ecommerce-Store"
     },
     "payload": {
-      "action": "started"
+      "repository_id": 1242697320,
+      "push_id": 34363725425,
+      "ref": "refs/heads/main",
+      "head": "f8228a34b978de7538fadb7b5f76cce6ac75ad06",
+      "before": "38d38845881384e2069e3b4bd26f3ac64889f9ce"
     },
     "public": true,
-    "created_at": "2026-05-22T09:26:08Z"
+    "created_at": "2026-05-19T14:54:39Z"
   },
   {
-    "id": "9759343331",
-    "type": "WatchEvent",
+    "id": "12039869984",
+    "type": "PushEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 1214155858,
-      "name": "AndrewPrifer/liquid-dom",
-      "url": "https://api.github.com/repos/AndrewPrifer/liquid-dom"
+      "id": 1242697320,
+      "name": "Sheikh-H/CS50-Final-Project-Ecommerce-Store",
+      "url": "https://api.github.com/repos/Sheikh-H/CS50-Final-Project-Ecommerce-Store"
     },
     "payload": {
-      "action": "started"
+      "repository_id": 1242697320,
+      "push_id": 34330455566,
+      "ref": "refs/heads/main",
+      "head": "38d38845881384e2069e3b4bd26f3ac64889f9ce",
+      "before": "4fc7c145879cfac6774214643c96968c2cbfe3d3"
     },
     "public": true,
-    "created_at": "2026-05-21T21:23:00Z"
+    "created_at": "2026-05-19T00:05:42Z"
   },
   {
-    "id": "9676067162",
-    "type": "WatchEvent",
+    "id": "12030045392",
+    "type": "PushEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 47854924,
-      "name": "rust-lang/book",
-      "url": "https://api.github.com/repos/rust-lang/book"
+      "id": 1242697320,
+      "name": "Sheikh-H/CS50-Final-Project-Ecommerce-Store",
+      "url": "https://api.github.com/repos/Sheikh-H/CS50-Final-Project-Ecommerce-Store"
     },
     "payload": {
-      "action": "started"
+      "repository_id": 1242697320,
+      "push_id": 34320641307,
+      "ref": "refs/heads/main",
+      "head": "4fc7c145879cfac6774214643c96968c2cbfe3d3",
+      "before": "e2fd4935cefb4c01d6cf50ff1e189729f901c0ef"
     },
     "public": true,
-    "created_at": "2026-05-20T07:08:34Z",
-    "org": {
-      "id": 5430905,
-      "login": "rust-lang",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/rust-lang",
-      "avatar_url": "https://avatars.githubusercontent.com/u/5430905?"
-    }
+    "created_at": "2026-05-18T19:09:27Z"
   },
   {
-    "id": "9652347471",
-    "type": "WatchEvent",
+    "id": "12029950361",
+    "type": "PushEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 15019962,
-      "name": "tldr-pages/tldr",
-      "url": "https://api.github.com/repos/tldr-pages/tldr"
+      "id": 1242697320,
+      "name": "Sheikh-H/CS50-Final-Project-Ecommerce-Store",
+      "url": "https://api.github.com/repos/Sheikh-H/CS50-Final-Project-Ecommerce-Store"
     },
     "payload": {
-      "action": "started"
+      "repository_id": 1242697320,
+      "push_id": 34320546676,
+      "ref": "refs/heads/main",
+      "head": "e2fd4935cefb4c01d6cf50ff1e189729f901c0ef",
+      "before": "70908953cbff376a8bc4de1db7d3ceb437689e5c"
     },
     "public": true,
-    "created_at": "2026-05-19T18:23:47Z",
-    "org": {
-      "id": 7366472,
-      "login": "tldr-pages",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/tldr-pages",
-      "avatar_url": "https://avatars.githubusercontent.com/u/7366472?"
-    }
+    "created_at": "2026-05-18T19:07:02Z"
   },
   {
-    "id": "9652344625",
-    "type": "WatchEvent",
+    "id": "12025046815",
+    "type": "CreateEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 48739367,
-      "name": "tealdeer-rs/tealdeer",
-      "url": "https://api.github.com/repos/tealdeer-rs/tealdeer"
+      "id": 1242697320,
+      "name": "Sheikh-H/CS50-Final-Project-Ecommerce-Store",
+      "url": "https://api.github.com/repos/Sheikh-H/CS50-Final-Project-Ecommerce-Store"
     },
     "payload": {
-      "action": "started"
+      "ref": "main",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/main",
+      "master_branch": "main",
+      "description": null,
+      "pusher_type": "user"
     },
     "public": true,
-    "created_at": "2026-05-19T18:23:43Z",
-    "org": {
-      "id": 178226396,
-      "login": "tealdeer-rs",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/tealdeer-rs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/178226396?"
-    }
+    "created_at": "2026-05-18T17:06:16Z"
   },
   {
-    "id": "9643137767",
-    "type": "WatchEvent",
+    "id": "11300412148",
+    "type": "PushEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 1164885639,
-      "name": "software-mansion/argent",
-      "url": "https://api.github.com/repos/software-mansion/argent"
+      "id": 1226636187,
+      "name": "Sheikh-H/darkmode",
+      "url": "https://api.github.com/repos/Sheikh-H/darkmode"
     },
     "payload": {
-      "action": "started"
+      "repository_id": 1226636187,
+      "push_id": 33591803361,
+      "ref": "refs/heads/main",
+      "head": "d058fec3ffe63b4f60e8e4f4056816e2ab80ae72",
+      "before": "09f4f1d7d9883a008076ddfbb2c572956fe3590c"
     },
     "public": true,
-    "created_at": "2026-05-19T14:37:50Z",
-    "org": {
-      "id": 56880679,
-      "login": "software-mansion",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/software-mansion",
-      "avatar_url": "https://avatars.githubusercontent.com/u/56880679?"
-    }
+    "created_at": "2026-05-01T16:45:53Z"
   },
   {
-    "id": "9585981592",
-    "type": "IssuesEvent",
+    "id": "11300399492",
+    "type": "CreateEvent",
     "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
+      "id": 207080929,
+      "login": "Sheikh-H",
+      "display_login": "Sheikh-H",
       "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
+      "url": "https://api.github.com/users/Sheikh-H",
+      "avatar_url": "https://avatars.githubusercontent.com/u/207080929?"
     },
     "repo": {
-      "id": 85077558,
-      "name": "nilbuild/developer-roadmap",
-      "url": "https://api.github.com/repos/nilbuild/developer-roadmap"
+      "id": 1226636187,
+      "name": "Sheikh-H/darkmode",
+      "url": "https://api.github.com/repos/Sheikh-H/darkmode"
     },
     "payload": {
-      "action": "closed",
-      "issue": {
-        "url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984",
-        "repository_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
-        "labels_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/labels{/name}",
-        "comments_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/comments",
-        "events_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/events",
-        "html_url": "https://github.com/nilbuild/developer-roadmap/issues/9984",
-        "id": 4466781382,
-        "node_id": "I_kwDOBRIuNs8AAAABCj2sxg",
-        "number": 9984,
-        "title": "Leaderboard \"Active\" streak list contains a duplicate user (same `user.id`, different `count`) \u2192 UI duplicates rows and DOM grows on tab toggle",
-        "user": {
-          "login": "oshliaer",
-          "id": 5027939,
-          "node_id": "MDQ6VXNlcjUwMjc5Mzk=",
-          "avatar_url": "https://avatars.githubusercontent.com/u/5027939?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/oshliaer",
-          "html_url": "https://github.com/oshliaer",
-          "followers_url": "https://api.github.com/users/oshliaer/followers",
-          "following_url": "https://api.github.com/users/oshliaer/following{/other_user}",
-          "gists_url": "https://api.github.com/users/oshliaer/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/oshliaer/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/oshliaer/subscriptions",
-          "organizations_url": "https://api.github.com/users/oshliaer/orgs",
-          "repos_url": "https://api.github.com/users/oshliaer/repos",
-          "events_url": "https://api.github.com/users/oshliaer/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/oshliaer/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignees": [
-          {
-            "login": "arikchakma",
-            "id": 54026804,
-            "node_id": "MDQ6VXNlcjU0MDI2ODA0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/54026804?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/arikchakma",
-            "html_url": "https://github.com/arikchakma",
-            "followers_url": "https://api.github.com/users/arikchakma/followers",
-            "following_url": "https://api.github.com/users/arikchakma/following{/other_user}",
-            "gists_url": "https://api.github.com/users/arikchakma/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/arikchakma/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/arikchakma/subscriptions",
-            "organizations_url": "https://api.github.com/users/arikchakma/orgs",
-            "repos_url": "https://api.github.com/users/arikchakma/repos",
-            "events_url": "https://api.github.com/users/arikchakma/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/arikchakma/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          }
-        ],
-        "milestone": null,
-        "comments": 1,
-        "created_at": "2026-05-18T06:28:28Z",
-        "updated_at": "2026-05-18T11:40:32Z",
-        "closed_at": "2026-05-18T11:40:32Z",
-        "assignee": {
-          "login": "arikchakma",
-          "id": 54026804,
-          "node_id": "MDQ6VXNlcjU0MDI2ODA0",
-          "avatar_url": "https://avatars.githubusercontent.com/u/54026804?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/arikchakma",
-          "html_url": "https://github.com/arikchakma",
-          "followers_url": "https://api.github.com/users/arikchakma/followers",
-          "following_url": "https://api.github.com/users/arikchakma/following{/other_user}",
-          "gists_url": "https://api.github.com/users/arikchakma/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/arikchakma/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/arikchakma/subscriptions",
-          "organizations_url": "https://api.github.com/users/arikchakma/orgs",
-          "repos_url": "https://api.github.com/users/arikchakma/repos",
-          "events_url": "https://api.github.com/users/arikchakma/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/arikchakma/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "active_lock_reason": null,
-        "sub_issues_summary": {
-          "total": 0,
-          "completed": 0,
-          "percent_completed": 0
-        },
-        "issue_dependencies_summary": {
-          "blocked_by": 0,
-          "total_blocked_by": 0,
-          "blocking": 0,
-          "total_blocking": 0
-        },
-        "body": "## What's wrong\n\nOn `/leaderboard`, the **Longest Visit Streak \u2192 Active** card contains two entries for the same user (`id = 679b590f31e842a9fc848267`, name `Lost`) with different streak values \u2014 158 and 151. Toggling Active \u2194 Lifetime tabs causes additional `<li>` elements for this user to accumulate in the DOM \u2014 after 3 toggles the Active list already shows three `Lost \u2014 158` rows.\n\n## Steps to reproduce\n\n1. Open https://roadmap.sh/leaderboard\n2. The \u00abLongest Visit Streak\u00bb card opens on the Active tab by default \u2014 note the two `Lost` rows (158 and 151)\n3. Click `Lifetime` \u2192 then `Active` \u2192 repeat 2\u20133 times\n4. Duplicates of `Lost \u2014 158` start appearing in the Active list, and similarly in Lifetime; both cards visibly grow\n\n## Evidence \u2014 API response\n\n`GET https://api.roadmap.sh/v1-list-leaderboard-stats` \u2192 `streaks.active`:\n\n```json\n[\n  { \"id\": \"6712dee6791f57dd60d309cd\", \"name\": \"IgorLutiy\", \"count\": 379 },\n  { \"id\": \"64f6acfa5ce9f4ca589060c4\", \"name\": \"samuel\",    \"count\": 280 },\n  ...\n  { \"id\": \"679b590f31e842a9fc848267\", \"name\": \"Lost\",      \"count\": 158 },\n  { \"id\": \"6761b41e8fe51199dac494b4\", \"name\": \"Brofy\",     \"count\": 152 },\n  { \"id\": \"679b590f31e842a9fc848267\", \"name\": \"Lost\",      \"count\": 151 }\n]\n```\n\nThe same `id` appears twice in the array with different `count` values.\n\n## Root cause\n\n**Backend:** the leaderboard aggregation does not deduplicate entries by `user_id` \u2014 a single user can land in `streaks.active` more than once (likely two stored streak sessions for the same account being concatenated without `GROUP BY user_id` / `DISTINCT`).\n\n**Frontend (amplifies the bug):** `src/components/Leaderboard/LeaderboardPage.tsx:172` uses `<li key={user.id}>`. When the API returns duplicate `id`s, React hits a key collision within a single list. Reconciliation on tab toggle becomes undefined and stale DOM nodes are not unmounted, so each Active \u2194 Lifetime toggle adds another row.\n\n## Suggested fixes\n\n1. **Primary \u2014 backend:** guarantee `user_id` uniqueness in every leaderboard array (`active`, `lifetime`, and friends). E.g. `DISTINCT ON (user_id) ORDER BY count DESC` (Postgres) or the equivalent aggregation step.\n2. **Defense on the frontend** \u2014 change the key in `LeaderboardPage.tsx:172`:\n   ```diff\n   -                key={user.id}\n   +                key={\\`\\${user.id}-\\${counter}\\`}\n   ```\n   This removes the reconciliation UB even if the backend ever regresses to returning duplicates again.\n\n## Environment\n\n- URL: https://roadmap.sh/leaderboard\n- Observed: 2026-05-18\n- Browser: Chrome (current)\n- API access: public, no auth required",
-        "reactions": {
-          "url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "timeline_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/timeline",
-        "performed_via_github_app": null,
-        "state_reason": "completed",
-        "pinned_comment": null
-      }
+      "ref": "main",
+      "ref_type": "branch",
+      "full_ref": "refs/heads/main",
+      "master_branch": "main",
+      "description": "I created this website as part of a project for the CS50x 2026 course in Week 8. Nothing too fancy but wanted to learn how to make the light and dark mode feature and thought it would be good to upload",
+      "pusher_type": "user"
     },
     "public": true,
-    "created_at": "2026-05-18T11:40:33Z"
-  },
-  {
-    "id": "9585981494",
-    "type": "IssueCommentEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 85077558,
-      "name": "nilbuild/developer-roadmap",
-      "url": "https://api.github.com/repos/nilbuild/developer-roadmap"
-    },
-    "payload": {
-      "action": "created",
-      "issue": {
-        "url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984",
-        "repository_url": "https://api.github.com/repos/nilbuild/developer-roadmap",
-        "labels_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/labels{/name}",
-        "comments_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/comments",
-        "events_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/events",
-        "html_url": "https://github.com/nilbuild/developer-roadmap/issues/9984",
-        "id": 4466781382,
-        "node_id": "I_kwDOBRIuNs8AAAABCj2sxg",
-        "number": 9984,
-        "title": "Leaderboard \"Active\" streak list contains a duplicate user (same `user.id`, different `count`) \u2192 UI duplicates rows and DOM grows on tab toggle",
-        "user": {
-          "login": "oshliaer",
-          "id": 5027939,
-          "node_id": "MDQ6VXNlcjUwMjc5Mzk=",
-          "avatar_url": "https://avatars.githubusercontent.com/u/5027939?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/oshliaer",
-          "html_url": "https://github.com/oshliaer",
-          "followers_url": "https://api.github.com/users/oshliaer/followers",
-          "following_url": "https://api.github.com/users/oshliaer/following{/other_user}",
-          "gists_url": "https://api.github.com/users/oshliaer/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/oshliaer/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/oshliaer/subscriptions",
-          "organizations_url": "https://api.github.com/users/oshliaer/orgs",
-          "repos_url": "https://api.github.com/users/oshliaer/repos",
-          "events_url": "https://api.github.com/users/oshliaer/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/oshliaer/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "labels": [],
-        "state": "closed",
-        "locked": false,
-        "assignees": [
-          {
-            "login": "arikchakma",
-            "id": 54026804,
-            "node_id": "MDQ6VXNlcjU0MDI2ODA0",
-            "avatar_url": "https://avatars.githubusercontent.com/u/54026804?v=4",
-            "gravatar_id": "",
-            "url": "https://api.github.com/users/arikchakma",
-            "html_url": "https://github.com/arikchakma",
-            "followers_url": "https://api.github.com/users/arikchakma/followers",
-            "following_url": "https://api.github.com/users/arikchakma/following{/other_user}",
-            "gists_url": "https://api.github.com/users/arikchakma/gists{/gist_id}",
-            "starred_url": "https://api.github.com/users/arikchakma/starred{/owner}{/repo}",
-            "subscriptions_url": "https://api.github.com/users/arikchakma/subscriptions",
-            "organizations_url": "https://api.github.com/users/arikchakma/orgs",
-            "repos_url": "https://api.github.com/users/arikchakma/repos",
-            "events_url": "https://api.github.com/users/arikchakma/events{/privacy}",
-            "received_events_url": "https://api.github.com/users/arikchakma/received_events",
-            "type": "User",
-            "user_view_type": "public",
-            "site_admin": false
-          }
-        ],
-        "milestone": null,
-        "comments": 1,
-        "created_at": "2026-05-18T06:28:28Z",
-        "updated_at": "2026-05-18T11:40:32Z",
-        "closed_at": "2026-05-18T11:40:32Z",
-        "assignee": {
-          "login": "arikchakma",
-          "id": 54026804,
-          "node_id": "MDQ6VXNlcjU0MDI2ODA0",
-          "avatar_url": "https://avatars.githubusercontent.com/u/54026804?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/arikchakma",
-          "html_url": "https://github.com/arikchakma",
-          "followers_url": "https://api.github.com/users/arikchakma/followers",
-          "following_url": "https://api.github.com/users/arikchakma/following{/other_user}",
-          "gists_url": "https://api.github.com/users/arikchakma/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/arikchakma/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/arikchakma/subscriptions",
-          "organizations_url": "https://api.github.com/users/arikchakma/orgs",
-          "repos_url": "https://api.github.com/users/arikchakma/repos",
-          "events_url": "https://api.github.com/users/arikchakma/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/arikchakma/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "active_lock_reason": null,
-        "sub_issues_summary": {
-          "total": 0,
-          "completed": 0,
-          "percent_completed": 0
-        },
-        "issue_dependencies_summary": {
-          "blocked_by": 0,
-          "total_blocked_by": 0,
-          "blocking": 0,
-          "total_blocking": 0
-        },
-        "body": "## What's wrong\n\nOn `/leaderboard`, the **Longest Visit Streak \u2192 Active** card contains two entries for the same user (`id = 679b590f31e842a9fc848267`, name `Lost`) with different streak values \u2014 158 and 151. Toggling Active \u2194 Lifetime tabs causes additional `<li>` elements for this user to accumulate in the DOM \u2014 after 3 toggles the Active list already shows three `Lost \u2014 158` rows.\n\n## Steps to reproduce\n\n1. Open https://roadmap.sh/leaderboard\n2. The \u00abLongest Visit Streak\u00bb card opens on the Active tab by default \u2014 note the two `Lost` rows (158 and 151)\n3. Click `Lifetime` \u2192 then `Active` \u2192 repeat 2\u20133 times\n4. Duplicates of `Lost \u2014 158` start appearing in the Active list, and similarly in Lifetime; both cards visibly grow\n\n## Evidence \u2014 API response\n\n`GET https://api.roadmap.sh/v1-list-leaderboard-stats` \u2192 `streaks.active`:\n\n```json\n[\n  { \"id\": \"6712dee6791f57dd60d309cd\", \"name\": \"IgorLutiy\", \"count\": 379 },\n  { \"id\": \"64f6acfa5ce9f4ca589060c4\", \"name\": \"samuel\",    \"count\": 280 },\n  ...\n  { \"id\": \"679b590f31e842a9fc848267\", \"name\": \"Lost\",      \"count\": 158 },\n  { \"id\": \"6761b41e8fe51199dac494b4\", \"name\": \"Brofy\",     \"count\": 152 },\n  { \"id\": \"679b590f31e842a9fc848267\", \"name\": \"Lost\",      \"count\": 151 }\n]\n```\n\nThe same `id` appears twice in the array with different `count` values.\n\n## Root cause\n\n**Backend:** the leaderboard aggregation does not deduplicate entries by `user_id` \u2014 a single user can land in `streaks.active` more than once (likely two stored streak sessions for the same account being concatenated without `GROUP BY user_id` / `DISTINCT`).\n\n**Frontend (amplifies the bug):** `src/components/Leaderboard/LeaderboardPage.tsx:172` uses `<li key={user.id}>`. When the API returns duplicate `id`s, React hits a key collision within a single list. Reconciliation on tab toggle becomes undefined and stale DOM nodes are not unmounted, so each Active \u2194 Lifetime toggle adds another row.\n\n## Suggested fixes\n\n1. **Primary \u2014 backend:** guarantee `user_id` uniqueness in every leaderboard array (`active`, `lifetime`, and friends). E.g. `DISTINCT ON (user_id) ORDER BY count DESC` (Postgres) or the equivalent aggregation step.\n2. **Defense on the frontend** \u2014 change the key in `LeaderboardPage.tsx:172`:\n   ```diff\n   -                key={user.id}\n   +                key={\\`\\${user.id}-\\${counter}\\`}\n   ```\n   This removes the reconciliation UB even if the backend ever regresses to returning duplicates again.\n\n## Environment\n\n- URL: https://roadmap.sh/leaderboard\n- Observed: 2026-05-18\n- Browser: Chrome (current)\n- API access: public, no auth required",
-        "reactions": {
-          "url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/reactions",
-          "total_count": 0,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 0,
-          "rocket": 0,
-          "eyes": 0
-        },
-        "timeline_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984/timeline",
-        "performed_via_github_app": null,
-        "state_reason": "completed",
-        "pinned_comment": null
-      },
-      "comment": {
-        "url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/comments/4477298526",
-        "html_url": "https://github.com/nilbuild/developer-roadmap/issues/9984#issuecomment-4477298526",
-        "issue_url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/9984",
-        "id": 4477298526,
-        "node_id": "IC_kwDOBRIuNs8AAAABCt4nXg",
-        "user": {
-          "login": "arikchakma",
-          "id": 54026804,
-          "node_id": "MDQ6VXNlcjU0MDI2ODA0",
-          "avatar_url": "https://avatars.githubusercontent.com/u/54026804?v=4",
-          "gravatar_id": "",
-          "url": "https://api.github.com/users/arikchakma",
-          "html_url": "https://github.com/arikchakma",
-          "followers_url": "https://api.github.com/users/arikchakma/followers",
-          "following_url": "https://api.github.com/users/arikchakma/following{/other_user}",
-          "gists_url": "https://api.github.com/users/arikchakma/gists{/gist_id}",
-          "starred_url": "https://api.github.com/users/arikchakma/starred{/owner}{/repo}",
-          "subscriptions_url": "https://api.github.com/users/arikchakma/subscriptions",
-          "organizations_url": "https://api.github.com/users/arikchakma/orgs",
-          "repos_url": "https://api.github.com/users/arikchakma/repos",
-          "events_url": "https://api.github.com/users/arikchakma/events{/privacy}",
-          "received_events_url": "https://api.github.com/users/arikchakma/received_events",
-          "type": "User",
-          "user_view_type": "public",
-          "site_admin": false
-        },
-        "created_at": "2026-05-18T11:40:32Z",
-        "updated_at": "2026-05-18T11:40:32Z",
-        "body": "I have fixed the issue, please have a look and re-open if you still face that issue.",
-        "pin": null,
-        "reactions": {
-          "url": "https://api.github.com/repos/nilbuild/developer-roadmap/issues/comments/4477298526/reactions",
-          "total_count": 2,
-          "+1": 0,
-          "-1": 0,
-          "laugh": 0,
-          "hooray": 0,
-          "confused": 0,
-          "heart": 1,
-          "rocket": 1,
-          "eyes": 0
-        },
-        "performed_via_github_app": null
-      }
-    },
-    "public": true,
-    "created_at": "2026-05-18T11:40:32Z"
-  },
-  {
-    "id": "9563900011",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 549857084,
-      "name": "kubernetes-sigs/karpenter",
-      "url": "https://api.github.com/repos/kubernetes-sigs/karpenter"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-17T21:37:18Z",
-    "org": {
-      "id": 36015203,
-      "login": "kubernetes-sigs",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/kubernetes-sigs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/36015203?"
-    }
-  },
-  {
-    "id": "9558153479",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1161163182,
-      "name": "tinyhumansai/openhuman",
-      "url": "https://api.github.com/repos/tinyhumansai/openhuman"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-17T15:26:45Z",
-    "org": {
-      "id": 246003628,
-      "login": "tinyhumansai",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/tinyhumansai",
-      "avatar_url": "https://avatars.githubusercontent.com/u/246003628?"
-    }
-  },
-  {
-    "id": "9558152738",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1137846174,
-      "name": "xai-org/x-algorithm",
-      "url": "https://api.github.com/repos/xai-org/x-algorithm"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-17T15:26:42Z",
-    "org": {
-      "id": 130314967,
-      "login": "xai-org",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/xai-org",
-      "avatar_url": "https://avatars.githubusercontent.com/u/130314967?"
-    }
-  },
-  {
-    "id": "9538875556",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1049141199,
-      "name": "callstack/liquid-glass",
-      "url": "https://api.github.com/repos/callstack/liquid-glass"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-16T14:28:08Z",
-    "org": {
-      "id": 42239399,
-      "login": "callstack",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/callstack",
-      "avatar_url": "https://avatars.githubusercontent.com/u/42239399?"
-    }
-  },
-  {
-    "id": "9525469437",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 517179415,
-      "name": "WebsiteBeaver/react-native-document-scanner-plugin",
-      "url": "https://api.github.com/repos/WebsiteBeaver/react-native-document-scanner-plugin"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-15T22:28:48Z",
-    "org": {
-      "id": 30008020,
-      "login": "WebsiteBeaver",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/WebsiteBeaver",
-      "avatar_url": "https://avatars.githubusercontent.com/u/30008020?"
-    }
-  },
-  {
-    "id": "9483406267",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 651272926,
-      "name": "EvanBacon/expo-apple-targets",
-      "url": "https://api.github.com/repos/EvanBacon/expo-apple-targets"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-14T23:13:31Z"
-  },
-  {
-    "id": "9465010986",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 906650177,
-      "name": "lzt1008/powerflow",
-      "url": "https://api.github.com/repos/lzt1008/powerflow"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-14T14:39:18Z"
-  },
-  {
-    "id": "9462006841",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1202555904,
-      "name": "wxtsky/CodeIsland",
-      "url": "https://api.github.com/repos/wxtsky/CodeIsland"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-14T13:25:35Z"
-  },
-  {
-    "id": "9386039881",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1214728858,
-      "name": "justjake/sqlite3-parser-js",
-      "url": "https://api.github.com/repos/justjake/sqlite3-parser-js"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-12T22:30:00Z"
-  },
-  {
-    "id": "9326076682",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1127534604,
-      "name": "garden-co/jazz",
-      "url": "https://api.github.com/repos/garden-co/jazz"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-11T17:40:35Z",
-    "org": {
-      "id": 110299195,
-      "login": "garden-co",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/garden-co",
-      "avatar_url": "https://avatars.githubusercontent.com/u/110299195?"
-    }
-  },
-  {
-    "id": "9280069949",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 284031822,
-      "name": "gorhom/react-native-bottom-sheet",
-      "url": "https://api.github.com/repos/gorhom/react-native-bottom-sheet"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-10T07:34:06Z"
-  },
-  {
-    "id": "9279117459",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 711888465,
-      "name": "jamsch/expo-speech-recognition",
-      "url": "https://api.github.com/repos/jamsch/expo-speech-recognition"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-10T06:01:13Z"
-  },
-  {
-    "id": "9275399699",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 684184786,
-      "name": "compio-rs/compio",
-      "url": "https://api.github.com/repos/compio-rs/compio"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-09T23:06:04Z",
-    "org": {
-      "id": 145824192,
-      "login": "compio-rs",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/compio-rs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/145824192?"
-    }
-  },
-  {
-    "id": "9269819508",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1217121446,
-      "name": "immanuwell/pktz",
-      "url": "https://api.github.com/repos/immanuwell/pktz"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-09T15:34:57Z"
-  },
-  {
-    "id": "9269819141",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1221607543,
-      "name": "mvm-sh/mvm",
-      "url": "https://api.github.com/repos/mvm-sh/mvm"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-09T15:34:55Z",
-    "org": {
-      "id": 279459425,
-      "login": "mvm-sh",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/mvm-sh",
-      "avatar_url": "https://avatars.githubusercontent.com/u/279459425?"
-    }
-  },
-  {
-    "id": "9263747128",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1233290067,
-      "name": "vercel-labs/zero-native",
-      "url": "https://api.github.com/repos/vercel-labs/zero-native"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-09T07:18:44Z",
-    "org": {
-      "id": 108547162,
-      "login": "vercel-labs",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/vercel-labs",
-      "avatar_url": "https://avatars.githubusercontent.com/u/108547162?"
-    }
-  },
-  {
-    "id": "9263737579",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 425970928,
-      "name": "nandorojo/zeego",
-      "url": "https://api.github.com/repos/nandorojo/zeego"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-09T07:18:06Z"
-  },
-  {
-    "id": "9251342641",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 945562810,
-      "name": "haydenbleasel/ghost",
-      "url": "https://api.github.com/repos/haydenbleasel/ghost"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-08T19:57:01Z"
-  },
-  {
-    "id": "9251234715",
-    "type": "WatchEvent",
-    "actor": {
-      "id": 54026804,
-      "login": "arikchakma",
-      "display_login": "arikchakma",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/arikchakma",
-      "avatar_url": "https://avatars.githubusercontent.com/u/54026804?"
-    },
-    "repo": {
-      "id": 1215537628,
-      "name": "TanStack/redact",
-      "url": "https://api.github.com/repos/TanStack/redact"
-    },
-    "payload": {
-      "action": "started"
-    },
-    "public": true,
-    "created_at": "2026-05-08T19:53:23Z",
-    "org": {
-      "id": 72518640,
-      "login": "TanStack",
-      "gravatar_id": "",
-      "url": "https://api.github.com/orgs/TanStack",
-      "avatar_url": "https://avatars.githubusercontent.com/u/72518640?"
-    }
+    "created_at": "2026-05-01T16:45:32Z"
   }
 ]

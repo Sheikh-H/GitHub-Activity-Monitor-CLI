@@ -2,11 +2,13 @@ import os
 import sys
 import requests
 import json
-from rich import print as rpint
+from rich import print as rprint
 import time
 
+
 def ptt(message):
-    rpint(f"{message}".encode('utf-16', 'surrogatepass').decode('utf-16'))
+    rprint(f"{message}".encode("utf-16", "surrogatepass").decode("utf-16"))
+
 
 def fetch_request(username):
     url = f"https://api.github.com/users/{username}/events"
@@ -16,9 +18,10 @@ def fetch_request(username):
     with open("response.json", "w") as f:
         json.dump(response, f, indent=2)
 
-    with open("response.json", 'r') as f:
+    with open("response.json", "r") as f:
         data = json.load(f)
         return data
+
 
 def error_message(*messages):
     for message in messages:
@@ -28,24 +31,36 @@ def error_message(*messages):
     time.sleep(2)
     clear_screen()
 
+
 def clear_screen():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system("cls" if os.name == "nt" else "clear")
+
 
 def all_activity(username):
     data = fetch_request(username)
-    
-    rpint(f"\tListing all activities for GitHub user: [bold green]{username.upper()}[/bold green]")
+
+    rprint(
+        f"\tListing all activities for GitHub user: '[bold green]{username.upper()}[/bold green]'..."
+    )
+    time.sleep(2)
     for info in data:
-        print("-"*50)
-        ptt(info['type'])
-    
+        print("-" * 80)
+        rprint(f"[bold]Type[/bold]: [dim]{info['type']}[/dim] \t\t\t\t\t [bold]At: [/bold][dim]{info['created_at'].replace('T', " ").replace('Z',"")}[/dim]")
+        rprint(f"[bold]Repo[/bold]: {info['repo']['name']}")
+        if info['payload']['description']:
+            rprint(f"{info['payload']['description']}".encode("utf-16", "surrogatepass").decode("utf-16"))
+
 
 def main():
     if len(sys.argv) < 2:
-        error_message("To use this application, enter the GitHub username of the persons GitHub events you would like to see", "Usage: github-activity.py 'username'")
-        
+        error_message(
+            "To use this application, enter the GitHub username of the persons GitHub events you would like to see",
+            "Usage: github-activity.py 'username'",
+        )
+
     if len(sys.argv) == 2:
         all_activity(sys.argv[1])
+
 
 if __name__ == "__main__":
     main()
