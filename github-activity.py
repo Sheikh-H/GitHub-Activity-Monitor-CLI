@@ -24,12 +24,13 @@ def fetch_request(username):
 
 
 def error_message(*messages):
+    clear_screen()
     for message in messages:
-        clear_screen()
         print(message)
         time.sleep(1)
-    time.sleep(2)
+    time.sleep(3)
     clear_screen()
+    sys.exit()
 
 
 def clear_screen():
@@ -44,22 +45,101 @@ def all_activity(username):
     )
     time.sleep(2)
     for info in data:
-        print("-" * 80)
-        rprint(f"[bold]Type[/bold]: [dim]{info['type']}[/dim] \t\t\t\t\t [bold]At: [/bold][dim]{info['created_at'].replace('T', " ").replace('Z',"")}[/dim]")
-        rprint(f"[bold]Repo[/bold]: {info['repo']['name']}")
-        if info['payload']['description']:
-            rprint(f"{info['payload']['description']}".encode("utf-16", "surrogatepass").decode("utf-16"))
+        print("-" * 115)
+        rprint(
+            f"[bold]Event Type[/bold]: [dim]{info['type'].replace("Event", "")}[/dim] \t\t\t\t\t\t\t\t\t [bold]At: [/bold][dim]{info['created_at'].replace('T', " ").replace('Z',"")}[/dim]"
+        )
+        rprint(f"[bold]Repo Name[/bold]: {info['repo']['name']}")
+        payload = info.get("payload", {})
+        description = payload.get("description", {})
+        if description:
+            rprint(
+                f"[bold]Repo Description[/bold]: \n{description}".encode(
+                    "utf-16", "surrogatepass"
+                ).decode("utf-16")
+            )
+
+
+def filtered_activity(username, filter):
+    event_types = [
+        "commitcommentevent",
+        "createevent",
+        "deleteevent",
+        "discussionevent",
+        "forkevent",
+        "forkapplyevent",
+        "gollumevent",
+        "issuecommentevent",
+        "issuesevent",
+        "labelevent",
+        "memberevent",
+        "membershipevent",
+        "milestoneevent",
+        "organizationevent",
+        "orgblockevent",
+        "pagebuildevent",
+        "projectcardevent",
+        "projectcolumnevent",
+        "projectevent",
+        "publicevent",
+        "pullrequestevent",
+        "pullrequestreviewevent",
+        "pullrequestreviewcommentevent",
+        "pullrequestreviewthreadevent",
+        "pushevent",
+        "releaseevent",
+        "repositoryevent",
+        "repositoryimportevent",
+        "repositoryvulnerabilityalertevent",
+        "securityadvisoryevent",
+        "sponsorshipevent",
+        "starevent",
+        "statusevent",
+        "teamevent",
+        "teamaddevent",
+        "watchevent",
+        "workflowdispatchevent",
+        "workflowrunevent",
+    ]  # I used AI to generate a list of all possible even types in lowercase to make error handling easier
+
+    if filter.lower() not in event_types:
+        error_message(
+            "There is no event type with that entry, try another filter.",
+            "Here is a list of filters you can use:",
+            "['CommitCommentEvent', 'CreateEvent', 'DeleteEvent', 'DiscussionEvent', 'ForkEvent', 'ForkApplyEvent', 'GollumEvent', 'IssueCommentEvent', 'IssuesEvent', 'LabelEvent', 'MemberEvent', 'MembershipEvent', 'MilestoneEvent', 'OrganizationEvent', 'OrgBlockEvent', 'PageBuildEvent', 'ProjectCardEvent', 'ProjectColumnEvent', 'ProjectEvent', 'PublicEvent', 'PullRequestEvent', 'PullRequestReviewEvent', 'PullRequestReviewCommentEvent', 'PullRequestReviewThreadEvent', 'PushEvent', 'ReleaseEvent', 'RepositoryEvent', 'RepositoryImportEvent', 'RepositoryVulnerabilityAlertEvent', 'SecurityAdvisoryEvent', 'SponsorshipEvent', 'StarEvent', 'StatusEvent', 'TeamEvent', 'TeamAddEvent', 'WatchEvent', 'WorkflowDispatchEvent', 'WorkflowRunEvent']",
+        )
+    data = fetch_request(username)
+    for info in data:
+        if info["type"].lower() == filter.lower():
+            print("-" * 115)
+            type = str(info["type"])
+            if type:
+                rprint(
+                    f"[bold]Event Type[/bold]: [dim]{type[:-5]}[/dim] \t\t\t\t\t\t\t\t\t [bold]At: [/bold][dim]{info['created_at'].replace('T', " ").replace('Z',"")}[/dim]"
+                )
+            rprint(f"[bold]Repo Name[/bold]: {info['repo']['name']}")
+            payload = info.get("payload", {})
+            description = payload.get("description", {})
+            if description:
+                rprint(
+                    f"[bold]Repo Description[/bold]: \n{description}".encode(
+                        "utf-16", "surrogatepass"
+                    ).decode("utf-16")
+                )
 
 
 def main():
-    if len(sys.argv) < 2:
+    if len(sys.argv) == 2:
+        all_activity(sys.argv[1])
+    elif len(sys.argv) == 3:
+        filtered_activity(sys.argv[1], sys.argv[2])
+    else:
         error_message(
             "To use this application, enter the GitHub username of the persons GitHub events you would like to see",
             "Usage: github-activity.py 'username'",
+            "You can also filter by the type of events by entering it as a parameter after the username",
+            "Usage: github-activity.py [username] [filter]",
         )
-
-    if len(sys.argv) == 2:
-        all_activity(sys.argv[1])
 
 
 if __name__ == "__main__":
