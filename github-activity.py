@@ -109,13 +109,17 @@ def filtered_activity(username, filter):
             "['CommitCommentEvent', 'CreateEvent', 'DeleteEvent', 'DiscussionEvent', 'ForkEvent', 'ForkApplyEvent', 'GollumEvent', 'IssueCommentEvent', 'IssuesEvent', 'LabelEvent', 'MemberEvent', 'MembershipEvent', 'MilestoneEvent', 'OrganizationEvent', 'OrgBlockEvent', 'PageBuildEvent', 'ProjectCardEvent', 'ProjectColumnEvent', 'ProjectEvent', 'PublicEvent', 'PullRequestEvent', 'PullRequestReviewEvent', 'PullRequestReviewCommentEvent', 'PullRequestReviewThreadEvent', 'PushEvent', 'ReleaseEvent', 'RepositoryEvent', 'RepositoryImportEvent', 'RepositoryVulnerabilityAlertEvent', 'SecurityAdvisoryEvent', 'SponsorshipEvent', 'StarEvent', 'StatusEvent', 'TeamEvent', 'TeamAddEvent', 'WatchEvent', 'WorkflowDispatchEvent', 'WorkflowRunEvent']",
         )
     data = fetch_request(username)
+    rprint(
+        f"\tListing [bold blue]{filter[:-5].upper()}[/bold blue] activities for GitHub user: '[bold green]{username.upper()}[/bold green]'..."
+    )
+    time.sleep(2)
     for info in data:
         if info["type"].lower() == filter.lower():
             print("-" * 115)
-            type = str(info["type"])
-            if type:
+            info_type = str(info["type"])
+            if info_type:
                 rprint(
-                    f"[bold]Event Type[/bold]: [dim]{type[:-5]}[/dim] \t\t\t\t\t\t\t\t\t [bold]At: [/bold][dim]{info['created_at'].replace('T', " ").replace('Z',"")}[/dim]"
+                    f"[bold green]Event Type[/bold green]: [dim]{info_type[:-5]}[/dim] \t\t\t\t\t\t\t\t\t [bold]At: [/bold][dim]{info['created_at'].replace('T', " ").replace('Z',"")}[/dim]"
                 )
             rprint(f"[bold]Repo Name[/bold]: {info['repo']['name']}")
             payload = info.get("payload", {})
@@ -129,6 +133,7 @@ def filtered_activity(username, filter):
 
 
 def main():
+    clear_screen()
     if len(sys.argv) == 2:
         all_activity(sys.argv[1])
     elif len(sys.argv) == 3:
