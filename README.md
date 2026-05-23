@@ -43,7 +43,7 @@ While fulfilling the core specifications of the roadmap.sh project, GitPulse imp
 
 <table width="100%">
   <thead>
-    <tr style="background-color: #0d47a1; color: white;">
+    <tr style="background-color: #376e00; color: white;">
       <th style="padding: 10px; text-align: left;">Capability</th>
       <th style="padding: 10px; text-align: left;">Standard Requirements</th>
       <th style="padding: 10px; text-align: left;">GitPulse Implementation</th>
