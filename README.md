@@ -19,6 +19,22 @@ The application bypasses heavy, multi-layered interfaces in favour of a strict, 
 
 ---
 
+<h2>🧠 Architectural Philosophy & Design Intent</h2>
+
+<p>
+A key structural feature of GitPulse is its data handling pipeline: <b>the application explicitly serialises and writes the raw network API response directly to a local file (<code>response.json</code>) before parsing or displaying anything to the terminal.</b>
+</p>
+
+<p>
+This structural choice was deliberately made for two core reasons:
+</p>
+<ol>
+  <li><b>Deliberate Skill Reinforcement:</b> As a hands-on learning project, this pipeline was engineered to provide repetitive, practical exposure to Python's file handling mechanisms (I/O operations, stream management, buffers, and state persistence). Forcing the application to write, close, re-open, and read the payload builds strong muscle memory for programmatic data management.</li>
+  <li><b>Transparency & Developer Diagnostics:</b> It transforms the application into an educational tool for end-users. By saving the pristine, unedited payload alongside the active terminal application, users can open <code>response.json</code> to study the raw, complex GitHub REST API JSON structure, then look at their terminal to see exactly how Python has isolated, cleaned, and processed that exact data.</li>
+</ol>
+
+---
+
 <h2>⚡ Core Features & Project Enhancements</h2>
 
 <p>
@@ -224,14 +240,14 @@ SOFTWARE.
 <div align="center" style="border: 1px solid green; padding: 10px; border-radius: 5px;">
   <p>🗣️ Feel free to follow, connect, and chat!</p>
   <a class="header-badge" target="_blank" href="https://github.com/Sheikh-H"><img src="https://img.shields.io/badge/GitHub-376e00?style=flat&logo=github&logoColor=white" alt="GitHub">
-  </a><a class="header-badge" target="_blank" href="https://www.linkedin.com/in/Sheikh-Hussain/"><img src="https://img.shields.io/badge/LinkedIn-376e00?style=flat&logo=LinkedIn&logoColor=white" alt="LinkedIn">
+  </a><a class="header-badge" target="_blank" href="https://www.linkedin.com/in/sheikh-hussain/"><img src="https://img.shields.io/badge/LinkedIn-376e00?style=flat&logo=LinkedIn&logoColor=white" alt="LinkedIn">
   </a><a class="header-badge" target="_blank" href="mailto:sheikh.hussain1155@gmail.com"><img src="https://img.shields.io/badge/Gmail-376e00?style=flat&logo=gmail&logoColor=white" alt="Gmail">
-  </a><a class="header-badge" target="_blank" href="https://Sheikh-H.github.io/"><img src="https://img.shields.io/badge/Portfolio-376e00?style=flat&logo=github&logoColor=white" alt="Portfolio">
+  </a><a class="header-badge" target="_blank" href="https://sheikh-h.github.io/"><img src="https://img.shields.io/badge/Portfolio-376e00?style=flat&logo=github&logoColor=white" alt="Portfolio">
   </a>
 </div>
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/Sheikh-Hussain/" target="_blank">By Sheikh Hussain 💚</a>  
+  <a href="https://www.linkedin.com/in/sheikh-hussain/" target="_blank">By Sheikh Hussain 💚</a>  
 </div>
 
 ---
