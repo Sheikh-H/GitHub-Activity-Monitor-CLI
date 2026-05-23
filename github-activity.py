@@ -6,10 +6,6 @@ from rich import print as rprint
 import time
 
 
-def ptt(message):
-    rprint(f"{message}".encode("utf-16", "surrogatepass").decode("utf-16"))
-
-
 def fetch_request(username):
     url = f"https://api.github.com/users/{username}/events"
 
