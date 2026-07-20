@@ -1,8 +1,8 @@
-# Real-Time CLI GitHub Activity Monitor
+# 📡 GitHub Activity Monitor CLI
 
 <p align="center">
-  <b>A responsive, light-weight command-line interface (CLI) to stream and filter live GitHub user activity events.</b><br>
-  Optimised for rapid telemetry, granular event filtering, and elegant terminal rendering.
+  <b>A lightweight command-line interface for monitoring, filtering, and analysing GitHub user activity events.</b><br>
+  Built for API interaction, terminal-based telemetry, and structured developer activity tracking using Python.
 </p>
 
 ---
@@ -10,11 +10,19 @@
 <h2>📘 Project Overview</h2>
 
 <p>
-<b>GitPulse</b> is a terminal-based activity tracking tool engineered to query public event logs directly from the GitHub REST API. This application was built completely from the ground up as a native solution for the <b><a href="https://roadmap.sh/projects/github-user-activity" target="_blank">GitHub User Activity</a></b> challenge on <b>roadmap.sh</b>.
+<b>GitHub Activity Monitor CLI</b> is a terminal-based monitoring application developed in Python that retrieves and processes public GitHub activity events through the GitHub REST API.
 </p>
 
 <p>
-The application bypasses heavy, multi-layered interfaces in favour of a strict, one-line CLI syntax. It is engineered with automated screen management, detailed exception handling, and local JSON telemetry recording. By integrating deep-level text rendering, GitPulse offers granular diagnostic visibility into active codebases, allowing developers to track user contributions directly inside their workflow environment.
+This project was created as part of the <b><a href="https://roadmap.sh/projects/github-user-activity" target="_blank">GitHub User Activity</a></b> challenge on <b>roadmap.sh</b>. The purpose of the project is to demonstrate practical understanding of API requests, JSON data processing, command-line applications, and external data handling.
+</p>
+
+<p>
+The application allows users to monitor recent GitHub events for any public GitHub profile directly from the terminal. Users can retrieve complete activity streams or filter results by specific GitHub event types, providing a lightweight alternative to browser-based activity dashboards.
+</p>
+
+<p>
+Instead of relying on graphical interfaces, the system follows a direct CLI workflow where users provide a GitHub username and optional filtering parameters. The application communicates with GitHub's public API, processes the returned JSON payload, and renders meaningful activity information directly inside the terminal.
 </p>
 
 ---
@@ -22,60 +30,100 @@ The application bypasses heavy, multi-layered interfaces in favour of a strict, 
 <h2>🧠 Architectural Philosophy & Design Intent</h2>
 
 <p>
-A key structural feature of GitPulse is its data handling pipeline: <b>the application explicitly serialises and writes the raw network API response directly to a local file (<code>response.json</code>) before parsing or displaying anything to the terminal.</b>
+The project was intentionally designed around a transparent API processing pipeline:
 </p>
 
+<pre>
+GitHub API Request
+        ↓
+Raw JSON Response
+        ↓
+Local response.json Storage
+        ↓
+JSON Parsing
+        ↓
+Terminal Rendering
+</pre>
+
 <p>
-This structural choice was deliberately made for two core reasons:
+The application saves the original API response before processing any information. This design choice was implemented to strengthen understanding of:
 </p>
-<ol>
-  <li><b>Deliberate Skill Reinforcement:</b> As a hands-on learning project, this pipeline was engineered to provide repetitive, practical exposure to Python's file handling mechanisms (I/O operations, stream management, buffers, and state persistence). Forcing the application to write, close, re-open, and read the payload builds strong muscle memory for programmatic data management.</li>
-  <li><b>Transparency & Developer Diagnostics:</b> It transforms the application into an educational tool for end-users. By saving the pristine, unedited payload alongside the active terminal application, users can open <code>response.json</code> to study the raw, complex GitHub REST API JSON structure, then look at their terminal to see exactly how Python has isolated, cleaned, and processed that exact data.</li>
-</ol>
+
+<ul>
+  <li>HTTP request handling.</li>
+  <li>JSON serialisation and deserialisation.</li>
+  <li>File persistence workflows.</li>
+  <li>External API data structures.</li>
+  <li>Transforming raw API responses into readable output.</li>
+</ul>
+
+<p>
+By preserving the original response payload, developers can inspect the exact JSON returned from GitHub and compare it against the processed terminal output.
+</p>
 
 ---
 
-<h2>⚡ Core Features & Project Enhancements</h2>
+<h2>⚡ Core Features</h2>
+
+<ul>
+  <li>Retrieve public GitHub user activity through the GitHub REST API.</li>
+  <li>Display recent repository activity directly inside the terminal.</li>
+  <li>Filter events using specific GitHub event types.</li>
+  <li>Automatically cache API responses locally.</li>
+  <li>Handle invalid usernames and API failures gracefully.</li>
+  <li>Clean terminal interface with structured output formatting.</li>
+  <li>Cross-platform terminal clearing support.</li>
+  <li>Readable timestamp formatting.</li>
+  <li>Repository and event metadata extraction.</li>
+</ul>
+
+---
+
+<h2>📊 Supported Activity Filtering</h2>
 
 <p>
-While fulfilling the core specifications of the roadmap.sh project, GitPulse implements several advanced features that elevate it above standard scripts:
+The application supports filtering GitHub activity using GitHub's public event categories.
 </p>
 
 <table width="100%">
-  <thead>
-    <tr style="background-color: #376e00; color: white;">
-      <th style="padding: 10px; text-align: left;">Capability</th>
-      <th style="padding: 10px; text-align: left;">Standard Requirements</th>
-      <th style="padding: 10px; text-align: left;">GitPulse Implementation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Argument Processing</b></td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;">Accept a basic username argument.</td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Dual-mode processing</b> supporting full history dumps or specific event type target filters.</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Telemetry Logging</b></td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;">Fetch and print directly to console.</td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Automatic payload preservation</b> caching the raw API transaction directly to <code>response.json</code> before console delivery.</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Visual Interface</b></td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;">Plain text output streaming.</td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;">Enhanced terminal visuals utilizing <b>Rich color syntax tags</b>, text separation, and automated shell clearing.</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>String Sanitisation</b></td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;">Standard JSON attribute parsing.</td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Surrogate pair text translation</b> to handle complex UTF-16 character encodings inside repository headers.</td>
-    </tr>
-    <tr>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Error Interception</b></td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;">Basic termination on failure.</td>
-      <td style="padding: 8px; border-bottom: 1px solid #ddd;"><b>Graceful UI timed timeouts</b> displaying step-by-step fallback parameters and filter indexes before exiting safely.</td>
-    </tr>
-  </tbody>
+<thead>
+<tr>
+<th>Event Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>PushEvent</code></td>
+<td>Displays repository code pushes and commits.</td>
+</tr>
+
+<tr>
+<td><code>WatchEvent</code></td>
+<td>Displays repository starring activity.</td>
+</tr>
+
+<tr>
+<td><code>CreateEvent</code></td>
+<td>Displays repository, branch, or tag creation.</td>
+</tr>
+
+<tr>
+<td><code>IssuesEvent</code></td>
+<td>Displays issue activity.</td>
+</tr>
+
+<tr>
+<td><code>PullRequestEvent</code></td>
+<td>Displays pull request activity.</td>
+</tr>
+
+<tr>
+<td><code>ForkEvent</code></td>
+<td>Displays repository fork activity.</td>
+</tr>
+</tbody>
 </table>
 
 ---
@@ -83,11 +131,12 @@ While fulfilling the core specifications of the roadmap.sh project, GitPulse imp
 <h2>🧩 Folder Structure</h2>
 
 <pre>
-GitPulse/
+Github-Activity-Monitor-CLI/
+
 │
-├── github-activity.py   # Main CLI application entry point and logic
-├── README.md            # Detailed system documentation
-└── response.json        # Cached raw data payload from the latest API transaction
+├── github-activity.py   # Main CLI application and API processing logic
+├── response.json        # Cached GitHub API response data
+└── README.md            # Project documentation
 </pre>
 
 ---
@@ -95,110 +144,274 @@ GitPulse/
 <h2>🚀 How to Run</h2>
 
 <ol>
-  <li>Ensure you have <b>Python 3.8 or above</b> configured on your local workstation.</li>
-  <li>Clone or download this repository locally:
-    <pre>git clone https://github.com/Sheikh-H/GitPulse.git</pre>
-  </li>
-  <li>Navigate directly into the project directory:
-    <pre>cd GitPulse</pre>
-  </li>
-  <li>Install the required external terminal formatting package:
-    <pre>pip install rich requests</pre>
-  </li>
-  <li>Execute commands directly using the syntax layouts detailed in the operational manual below.</li>
+
+<li>
+Ensure Python <b>3.8+</b> is installed.
+</li>
+
+<li>
+Clone the repository:
+<pre>
+git clone https://github.com/Sheikh-H/Github-Activity-Monitor-CLI.git
+</pre>
+</li>
+
+<li>
+Navigate into the project directory:
+<pre>
+cd Github-Activity-Monitor-CLI
+</pre>
+</li>
+
+<li>
+Install required dependencies:
+<pre>
+pip install requests rich
+</pre>
+</li>
+
+<li>
+Run the application:
+</li>
+
 </ol>
 
----
+<pre>
+python github-activity.py [username]
+</pre>
 
-<h2>🖥️ Detailed Usage & Command Manual</h2>
+Example:
 
-<p>
-GitPulse runs dynamically based on the exact positional arguments passed to the script during terminal execution.
-</p>
-
-<h3>1. Unfiltered Global Streams</h3>
-<p>To pull every recent public interaction log recorded on GitHub for a given profile, pass only the target username:</p>
-<pre>python github-activity.py [username]</pre>
-<i>Example:</i>
-<pre>python github-activity.py Sheikh-H</pre>
-
-<h3>2. Granular Activity Filtering</h3>
-<p>To narrow down the stream to a precise form of developer activity, append an event type keyword as a secondary parameter:</p>
-<pre>python github-activity.py [username] [filter_type]</pre>
-<i>Example (To only extract public star registrations):</i>
-<pre>python github-activity.py Sheikh-H WatchEvent</pre>
-<i>Example (To view code contribution updates):</i>
-<pre>python github-activity.py Sheikh-H PushEvent</pre>
-
-<p>⚠️ <b>Note:</b> If an unsupported or invalid filter phrase is provided, the script automatically triggers a diagnostic screen showing all valid parameters before shutting down the active pipeline.</p>
+<pre>
+python github-activity.py Sheikh-H
+</pre>
 
 ---
 
-<h2>⚙️ Code Architecture & Function Breakdown</h2>
+<h2>🖥️ Usage Guide</h2>
+
+<h3>1. Display All User Activity</h3>
 
 <p>
-This section details how the script processes your arguments and tracks active streams under the hood:
+Retrieve all recent public GitHub activity events:
 </p>
 
-<h3>Data Acquisition & Caching Engine</h3>
+<pre>
+python github-activity.py Sheikh-H
+</pre>
+
+
+<h3>2. Filter Specific Activity Types</h3>
+
+<p>
+Retrieve only a specific event category:
+</p>
+
+<pre>
+python github-activity.py Sheikh-H PushEvent
+</pre>
+
+Example:
+
+<pre>
+python github-activity.py Sheikh-H WatchEvent
+</pre>
+
+<p>
+If an invalid event type is provided, the application displays available filtering options before exiting safely.
+</p>
+
+---
+
+<h2>⚙️ Code Architecture</h2>
+
+<p>
+The application is divided into several functional layers responsible for API communication, processing, validation, and presentation.
+</p>
+
+---
+
+<h3>🌐 API Communication Layer</h3>
+
 <ul>
-  <li><code>fetch_request(username)</code>: Constructs the target URL for the GitHub API endpoint. Handles server connectivity using a hard-coded 10-second timeout to prevent terminal locking. Once a successful request completes, it writes the raw data to disk as a styled <code>response.json</code> backup before passing the runtime dictionary object onwards.</li>
+
+<li>
+<b><code>fetch_request(username)</code></b>
+
+<p>
+Responsible for communicating with the GitHub REST API.
+</p>
+
+Handles:
+
+<ul>
+<li>API URL construction.</li>
+<li>Network requests.</li>
+<li>Timeout protection.</li>
+<li>Error handling.</li>
+<li>Saving raw JSON responses.</li>
 </ul>
 
-<h3>Display Maintenance & Fault Defense</h3>
-<ul>
-  <li><code>clear_screen()</code>: Inspects local system properties to call matching shell commands (<code>cls</code> for Windows-based shells, <code>clear</code> for UNIX/macOS environments), ensuring the terminal remains free of visual clutter.</li>
-  <li><code>error_message(*messages)</code>: Accepts dynamic message arguments during a structural failure. Displays each parameter sequentially with step-by-step structural sleep pauses before completely shutting down the operating framework via a clean <code>sys.exit()</code> call.</li>
-</ul>
+</li>
 
-<h3>Stream Formatters</h3>
-<ul>
-  <li><code>all_activity(username)</code>: Acts as the global telemetry endpoint. Loops natively through the raw transactions list, outputs decorative spacing rails, and renders targeted repository information alongside decoded text fields.</li>
-  <li><code>filtered_activity(username, filter)</code>: Evaluates user input against a hard-coded library of 42 distinct GitHub activity types. Valid entries trigger a targeted layout displaying real-time timestamps (sanitised of messy 'T' or 'Z' indicators), specific tracking blocks, and target repository metadata.</li>
 </ul>
 
 ---
 
-<h2>📂 Local Telemetry Architecture</h2>
+<h3>💾 Local Data Storage</h3>
+
+<ul>
+
+<li>
+<b><code>response.json</code></b>
 
 <p>
-The application saves its network transactions locally to <code>response.json</code>. This allows for quick local debugging and testing without exhausting your hourly public GitHub API call allowance:
+Stores the latest API response locally for debugging, inspection, and learning purposes.
 </p>
 
-<h3>Sample Data Layout (<code>response.json</code>)</h3>
+</li>
+
+</ul>
+
+---
+
+<h3>🖥️ Terminal Interface Layer</h3>
+
+<ul>
+
+<li>
+<b><code>clear_screen()</code></b>
+
+<p>
+Automatically clears the terminal depending on the operating system.
+</p>
+
+Supports:
+
+<ul>
+<li>Windows (<code>cls</code>)</li>
+<li>Linux/macOS (<code>clear</code>)</li>
+</ul>
+
+</li>
+
+
+<li>
+<b><code>error_message()</code></b>
+
+<p>
+Provides structured error output before safely terminating execution.
+</p>
+
+</li>
+
+</ul>
+
+---
+
+<h3>📡 Activity Processing</h3>
+
+<ul>
+
+<li>
+<b><code>all_activity(username)</code></b>
+
+<p>
+Processes and displays the complete GitHub activity history.
+</p>
+
+</li>
+
+
+<li>
+<b><code>filtered_activity(username, filter)</code></b>
+
+<p>
+Processes only matching GitHub event types and formats the information into readable terminal output.
+</p>
+
+</li>
+
+</ul>
+
+---
+
+<h2>📂 Local API Data Architecture</h2>
+
+<p>
+The application stores the latest GitHub API response inside <code>response.json</code>.
+</p>
+
+Example:
+
 <pre>
 [
-  {
-    "id": "40294195281",
-    "type": "PushEvent",
-    "actor": {
-      "id": 499550,
+ {
+   "id": "40294195281",
+   "type": "PushEvent",
+   "actor": {
       "login": "Sheikh-H"
-    },
-    "repo": {
-      "id": 98132412,
-      "name": "Sheikh-H/developer-roadmap"
-    },
-    "payload": {
-      "push_id": 1629519102,
-      "size": 3,
-      "distinct_size": 3,
-      "description": "Community-driven roadmaps, articles and resources for developers."
-    },
-    "public": true,
-    "created_at": "2026-05-23T16:40:12Z"
-  }
+   },
+   "repo": {
+      "name": "example-project"
+   },
+   "created_at": "2026-05-23T16:40:12Z"
+ }
 ]
 </pre>
+
+<p>
+The stored response allows developers to inspect the original API structure and understand how GitHub represents user activity.
+</p>
+
+---
+
+<h2>🧪 Error Handling & Validation</h2>
+
+<p>
+The application includes defensive programming techniques to prevent unexpected failures.
+</p>
+
+<ul>
+<li>Handles invalid usernames.</li>
+<li>Handles failed API requests.</li>
+<li>Validates event filters.</li>
+<li>Prevents application crashes from malformed responses.</li>
+<li>Uses controlled application shutdowns.</li>
+</ul>
 
 ---
 
 <h2>🧰 Requirements & Dependencies</h2>
 
 <ul>
-  <li><b>Python Runtime:</b> version 3.8 or above.</li>
-  <li><b>Internal Standard Modules:</b> <code>os</code>, <code>sys</code>, <code>json</code>, <code>time</code>.</li>
-  <li><b>External Integration Libraries:</b> <code>requests</code> (for secure network requests) and <code>rich</code> (for text color rendering layouts).</li>
+
+<li>
+<b>Python:</b> Version 3.8 or above
+</li>
+
+<li>
+<b>Standard Libraries:</b>
+
+<code>
+os
+sys
+json
+time
+</code>
+
+</li>
+
+<li>
+<b>External Libraries:</b>
+
+<ul>
+<li><code>requests</code> - HTTP API communication</li>
+<li><code>rich</code> - Enhanced terminal rendering</li>
+</ul>
+
+</li>
+
 </ul>
 
 ---
@@ -206,7 +419,7 @@ The application saves its network transactions locally to <code>response.json</c
 <h2>📄 Licence</h2>
 
 <p>
-  This project is licensed under the <b>MIT Licence</b> — see the <a href="./LICENCE">LICENCE</a> file for details.
+This project is licensed under the <b>MIT Licence</b>.
 </p>
 
 <pre>
@@ -218,19 +431,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+copies of the Software.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
 </pre>
 
 ---
@@ -239,15 +442,14 @@ SOFTWARE.
 
 <div align="center" style="border: 1px solid green; padding: 10px; border-radius: 5px;">
   <p>🗣️ Feel free to follow, connect, and chat!</p>
-  <a class="header-badge" target="_blank" href="https://github.com/Sheikh-H"><img src="https://img.shields.io/badge/GitHub-376e00?style=flat&logo=github&logoColor=white" alt="GitHub">
-  </a><a class="header-badge" target="_blank" href="https://www.linkedin.com/in/sheikh-hussain/"><img src="https://img.shields.io/badge/LinkedIn-376e00?style=flat&logo=LinkedIn&logoColor=white" alt="LinkedIn">
-  </a><a class="header-badge" target="_blank" href="mailto:sheikh.hussain1155@gmail.com"><img src="https://img.shields.io/badge/Gmail-376e00?style=flat&logo=gmail&logoColor=white" alt="Gmail">
-  </a><a class="header-badge" target="_blank" href="https://sheikh-hussain.onrender.com/"><img src="https://img.shields.io/badge/Portfolio-376e00?style=flat&logo=github&logoColor=white" alt="Portfolio">
-  </a>
+  <a class="header-badge" target="_blank" href="https://github.com/Sheikh-H"><img src="https://img.shields.io/badge/GitHub-376e00?style=flat&logo=github&logoColor=white" alt="GitHub"></a>
+  <a class="header-badge" target="_blank" href="https://www.linkedin.com/in/sheikh-hussain/"><img src="https://img.shields.io/badge/LinkedIn-376e00?style=flat&logo=LinkedIn&logoColor=white" alt="LinkedIn"></a>
+  <a class="header-badge" target="_blank" href="mailto:sheikh.hussain1155@gmail.com"><img src="https://img.shields.io/badge/Gmail-376e00?style=flat&logo=gmail&logoColor=white" alt="Gmail"></a>
+  <a class="header-badge" target="_blank" href="https://sheikh-hussain.onrender.com/"><img src="https://img.shields.io/badge/Portfolio-376e00?style=flat&logo=github&logoColor=white" alt="Portfolio"></a>
 </div>
 
 <div align="center">
-  <a href="https://sheikh-hussain.onrender.com/" target="_blank">By Sheikh Hussain 💚</a>  
+  <a href="https://sheikh-hussain.onrender.com/" target="_blank">By Sheikh Hussain 💚</a>
 </div>
 
 ---
