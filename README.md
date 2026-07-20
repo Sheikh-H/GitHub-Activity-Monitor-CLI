@@ -1,4 +1,4 @@
-# 🐙 Real-Time CLI GitHub Activity Monitor
+# Real-Time CLI GitHub Activity Monitor
 
 <p align="center">
   <b>A responsive, light-weight command-line interface (CLI) to stream and filter live GitHub user activity events.</b><br>
